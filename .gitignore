@@ -1,2 +1,6 @@
 *.png
 *.svg
+*.zip
+*.json
+liste-id.txt
+extracted_*
