@@ -1,0 +1,33 @@
+graph {
+    // Style global pour les nœuds (taille réduite à 0.6 pouce)
+    node [image="icon_router.png", shape="none", width="0.6", height="0.6", fixedsize=true, fontcolor="red", fontsize="14pt"];
+    
+    // Style global pour les arcs
+    edge [fontcolor="blue", fontsize="14pt"];
+
+    // Positions des nœuds
+    A [pos="4,3!"];
+    B [pos="3,4!"];
+    C [pos="3,2!"];
+    D [pos="2,2!"];
+    E [pos="2,1!"];
+    F [pos="1,2!"];
+    G [pos="1,3!"];
+    H [pos="2,4!"];
+
+    // Liens et poids
+    A--B [label="1"];
+    A--C [label="4"];
+    B--C [label="2"];
+    B--D [label="9"];
+    B--G [label="4"];
+    B--H [label="2"];
+    C--D [label="4"];
+    C--E [label="3"];
+    D--E [label="1"];
+    D--F [label="3"];
+    D--G [label="1"];
+    E--F [label="1"];
+    F--G [label="6"];
+    G--H [label="14"];
+}
