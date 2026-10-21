@@ -4,12 +4,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 1. Toujours récupérer le code du dépôt EN PREMIER
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      # 2. Installer les paquets nécessaires
       - name: Installation de graphviz
         run: sudo apt update && sudo apt install -y graphviz
-      - name: Check out repository code
-        uses: actions/checkout@v3
+
+      # 3. Donner les droits d'exécution et lancer le script
       - name: Lancement graphviz
-        run: chmod +x run2.sh && ./run2.sh
+        run: |
+          chmod +x run2.sh
+          ./run2.sh
+
+      # 4. Upload des fichiers générés
       - name: upload du resultat
         uses: actions/upload-artifact@v4
         with:
