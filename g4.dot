@@ -1,14 +1,11 @@
 graph {
-    // Style global pour les nœuds avec l'icône
-    node [image="icon_router.png", shape="none", width="0.6", height="0.6", fixedsize=true, fontcolor="red", fontsize="14pt", labelloc="b"];
+    // Suppression de fixedsize pour ne pas écraser l'image + ajout de imagescale
+    node [image="icon_router.png", imagescale=true, shape="none", width="0.8", height="0.8", fontcolor="red", fontsize="14pt", labelloc="b"];
     
-    // Style global pour les arcs
     edge [fontcolor="blue", fontsize="14pt"];
 
-    // Nœuds
     A; B; C; D; E; F; G; H;
 
-    // Liens et poids
     A -- B [label="1"];
     A -- C [label="4"];
     B -- C [label="2"];

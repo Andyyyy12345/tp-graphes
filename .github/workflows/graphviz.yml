@@ -15,11 +15,10 @@ jobs:
           chmod +x run2.sh
           ./run2.sh
 
-      - name: Vérification des fichiers SVG générés
-        run: ls -la *.svg
-
       - name: upload du resultat
         uses: actions/upload-artifact@v4
         with:
           name: tous-les-graphes
-          path: "*.svg"
+          path: |
+            *.svg
+            icon_router.png
