@@ -1,6 +1,6 @@
 graph {
-    // Style global pour les nœuds (taille réduite à 0.6 pouce)
-    node [image="icon_router.png", shape="none", width="0.6", height="0.6", fixedsize=true, fontcolor="red", fontsize="14pt"];
+    // Remplacement par l'URL brute (raw) de GitHub pour que Graphviz puisse lire l'image PNG directement
+    node [image="https://githubusercontent.com", shape="none", width="0.6", height="0.6", fixedsize=true, fontcolor="red", fontsize="14pt"];
     
     // Style global pour les arcs
     edge [fontcolor="blue", fontsize="14pt"];
@@ -31,3 +31,4 @@ graph {
     F--G [label="6"];
     G--H [label="14"];
 }
+
