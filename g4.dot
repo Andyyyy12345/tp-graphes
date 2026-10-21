@@ -1,8 +1,8 @@
 graph {
-    // Suppression de fixedsize pour ne pas écraser l'image + ajout de imagescale
-    node [image="icon_router.png", imagescale=true, shape="none", width="0.8", height="0.8", fontcolor="red", fontsize="14pt", labelloc="b"];
+    // Nœuds carrés avec icône incrustée
+    node [image="icon_router.png", imagescale=true, shape="none", width="0.8", height="0.8", fixedsize=true, fontcolor="red", fontsize="12pt", labelloc="b"];
     
-    edge [fontcolor="blue", fontsize="14pt"];
+    edge [fontcolor="blue", fontsize="12pt"];
 
     A; B; C; D; E; F; G; H;
 
