@@ -1,5 +1,5 @@
 graph {
-    // Remplacement par l'URL brute (raw) de GitHub pour que Graphviz puisse lire l'image PNG directement
+    // Style global pour les nœuds (URL brute de l'image)
     node [image="https://githubusercontent.com", shape="none", width="0.6", height="0.6", fixedsize=true, fontcolor="red", fontsize="14pt"];
     
     // Style global pour les arcs
@@ -31,4 +31,3 @@ graph {
     F--G [label="6"];
     G--H [label="14"];
 }
-
