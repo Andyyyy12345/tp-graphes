@@ -1,6 +1,6 @@
 graph {
     // Style global pour les nœuds (URL brute de l'image)
-    node [image="https://githubusercontent.com", shape="none", width="0.6", height="0.6", fixedsize=true, fontcolor="red", fontsize="14pt"];
+    node [image="icon_router.png", shape="none", width="0.6", height="0.6", fixedsize=true, fontcolor="red", fontsize="14pt"];
     
     // Style global pour les arcs
     edge [fontcolor="blue", fontsize="14pt"];
